@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feed Back Form</title>
+</head>
+<body>
+    <form id="feedbackForm">
+        <center>
+        <font>Feed Back Form:</font>
+        <br><br>
+
+        <label for="name"><b>Name: </b></label>
+        <input type="text" placeholder="Enter your Name: " id="name">
+        <br><br>
+
+        <label for="father name"><b>Father Name: </b></label>
+        <input type="text" placeholder="Enter your Father Name: " id="fname">
+        <br><br>
+
+        <label for="gender"><b>Gender: </b></label>
+            <!-- <input type="radio" name="female" id="female">Female
+            <input type="radio" name="male" id="male">Male -->
+            <select name="gender" id="gender">
+            <option value="" disabled>Select gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select>
+        <br><br>
+
+        <label for="Date-Time"><b>Date-Time: </b></label>
+        <input type="datetime-local" id="date">
+        <br><br>
+
+        <label for="email"><b>Email: </b></label>
+        <input type="email" placeholder="Enter your Email: " id="email">
+        <br><br>
+
+        <label for="rating" disabled-selected><b>Rating: </b></label>
+        <select name="forRating" id="rating">
+            <option value="" disabled>Select Rate </option>
+            <option value="1">Poor</option>
+            <option value="2">Fine</option>
+            <option value="3">Good</option>
+            <option value="4">Too Good</option>
+            <option value="5">Excellent</option>
+        </select>
+        <br><br>
+
+        <label for="message"><b>Message: </b></label>
+        <textarea name="message" id="message" placeholder="Enter your feedback:" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        </center>
+    </form>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
